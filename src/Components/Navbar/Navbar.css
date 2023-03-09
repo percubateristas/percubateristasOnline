@@ -1,0 +1,239 @@
+.navbar{
+    background-color: var(--color-secundario-0);
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-contenedor {
+    width: 80%;
+    font-family: var(--tipografia-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-renglon-redes {
+    width: 100%;
+    height: 7vh;
+    background-color: var(--color-neutro-darkness);
+    font-family: var(--tipografia-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-contenedor-renglon {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.nav-redes {
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+}
+
+.btn-youtube, .btn-instagram, .btn-facebook {
+    font-size: 1.25rem;
+    color: #a53d31;
+}
+.nav-logo-texto{
+    font-size: 2.1rem;
+    margin: 0 auto;
+}
+
+.nav-lista {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 45%;
+    margin-bottom: 0;
+}
+
+.nav-lista a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--color-neutro-darkness);
+}
+
+.nav-lista li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+
+.btn-hamburguesa {
+    width: 20%;
+    visibility: 0;
+    opacity: 1;
+}
+
+/* .btn-hamburguesa-icono{
+    visibility: 1;
+    opacity: 0;
+} */
+
+.nav-logueo {
+    width: 25%;
+    display: flex;
+    gap: .6rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btn-inicio {
+    width: 40%;
+    color: var(--color-neutro-lightness);
+    border-radius: 2rem;
+    background-color: #b95c40;
+    border: none;
+    padding: .1rem .4rem;
+    font-size: 1rem;
+}
+
+.btn-inicio:hover {
+    transform: scale(1.1);
+    transition: .4seg all linear;
+}
+
+.btn-crear {
+    width: 40%;
+    color: var(--color-neutro-lightness);
+    border-radius: 2rem;
+    background-color: var(--color-primario-A);
+    border: none;
+    padding: .1rem .4rem;
+    font-size: 1rem;
+}
+
+.btn-crear:hover {
+    transform: scale(1.1);
+    transition: .4seg all linear;
+}
+
+.btn-hamburguesa-icono {
+    /* visibility: none; */
+    display: none;
+}
+
+
+/*---------------------  Media queries - Responsive  -------------------------*/
+
+/*----------------- Medium devices -------------------------*/
+
+
+@media only screen and (max-width: 991px) {
+
+
+    .nav-logueo {
+        width: 35%;
+    }
+
+   
+    .btn-inicio, .btn-crear{
+        width: 60%;
+        font-size: 1.3rem;
+    }
+
+    .nav-logo-texto{
+        font-size: 1.6rem;
+        margin: 0 auto;
+    }
+
+    .nav-lista{
+        display: none;
+
+
+        /* width: 60%;
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        background: var(--color-secundario-0);
+        display: flex;
+        flex-direction: column;
+        transform:translateX(100%);
+        transition: 0.3s ease all;
+        z-index: 10;
+        padding: 0; */
+        
+        
+    }
+    .nav-lista li a {
+        font-size: 1.2rem;
+        color: var(--color-neutro-darkness);
+    }
+    .nav-lista.abierto {
+        width: 60%;
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        background: var(--color-secundario-0);
+        display: flex;
+        flex-direction: column;
+        transform:translateX(100%);
+        transition: 0.3s ease all;
+        z-index: 10;
+        padding: 0;
+        
+        transform: translateX(0%) !important;
+    }
+    .btn-hamburguesa {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        
+       
+    }
+
+    .btn-hamburguesa-icono {
+        display: block;
+        opacity: 1;
+        color: var(--color-neutro-darkness);
+        display: block;
+        font-size: 2rem;
+    }
+    
+    
+}
+
+
+
+@media only screen and (min-width: 767px ) and (max-width: 991px) {
+    
+}
+
+/*----------------- Small devices -------------------------*/
+
+
+@media only screen and (min-width: 576px ) and (max-width: 767px) {
+    
+    .nav-logueo {
+        width: 45%;
+    }
+
+}
+
+/*----------------- X Small devices -------------------------*/
+
+
+@media only screen and (max-width: 575px) {
+    
+    .nav-logueo {
+        width: 50%;
+        
+    }
+
+    .btn-inicio, .btn-crear {
+        /* width: 55%; */
+        font-size: 1rem;
+    }
+
+}

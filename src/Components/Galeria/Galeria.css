@@ -1,0 +1,295 @@
+.galeria {
+    background-image:url(./galeria-fondo-banner.svg);
+    background-repeat: no-repeat;
+    background-color: var(--color-primario-C);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.galeria-indice {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria-indice-semiCirculo {
+    width: 20%;
+    height: 6rem;
+    background-color: var(--color-neutro-darkness);
+    clip-path: circle(50% at 50% 0);
+    text-align: center;
+    align-self:flex-end;
+    color: var(--color-neutro-lightness);
+    font-family: var(--tipografia-principal);
+}
+
+.galeria-indice-semiCirculo h2 {
+    font-size: 2.8rem;
+}
+
+/* clases para el carrusell*/
+
+.galeria-carrusell {
+    width: 80%;
+    height: 80vh;
+    margin-top: 0rem;
+    display: flex;
+    align-content: center;
+}
+
+.carousel-products {
+        width: 100%;
+        height: 80vh;
+        overflow: scroll;
+        /* padding: 30px; */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        /* background-color: antiquewhite; */
+        
+    }
+    
+    .carousel__container {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        gap: .5rem;
+    }
+    
+    .carousel__item {
+        /* background-color: #135cb1; */
+        width: 25%;
+        height: 60vh;
+        /* height: 420px; */
+        border-radius: 20px;
+        overflow: hidden;
+        /* margin-right: 10px; */
+        display: inline-block;
+        cursor: pointer;
+        transition: 450ms all;
+        transform-origin: center;
+        position: relative;
+    }
+
+    .carousel__item__img {
+        width: 100%;
+        height: 100%;
+        /* height: 380px; */
+        object-fit: cover;
+        object-position: center;
+        /* background-color: rgb(169, 131, 81); */
+    }
+
+
+    
+    /* .carousel__item:hover~.carousel__item {
+        transform: translate3d(100px, 0, 0);
+    }
+    
+    .carousel__container:hover .carousel__item {
+        opacity: 0.3;
+    }
+    
+    .carousel__container:hover .carousel__item:hover {
+        transform: scale(1.15);
+        opacity: 1;
+    } */
+    
+    .carousel__item__img {
+        width: 100%;
+        /* height: 70%; */
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    /* .carousel__item__details {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        font-size: 19px;
+        opacity: 0;
+        transition: 450ms opacity;
+        padding: 50px;
+        position: absolute;
+        top: 180;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    
+    
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .carousel__item__details:hover {
+        opacity: 1;
+        color: white;
+    }
+    
+    .carousel__item__details__title {
+        font-size: 19px;
+        font-weight: bold;
+        color: #FFFFFF;
+        line-height: 0;
+        position: absolute;
+        z-index: 3;
+    }
+    
+    
+    .carousel__item__details__subtitle {
+        font-size: 15px;
+        color: #FFFFFF;
+        margin-top: 7px;
+        overflow-wrap: normal;
+    } */
+    
+    /* .boton-vermas {
+        font-size: 14px;
+        color: white;
+        line-height: 0;
+        width: 80px;
+        height: 30px;
+        margin-left: 100px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .a-vermas {
+        text-decoration: white;
+        color: white;
+        font-size: 13px;
+        z-index: 10000;
+    
+    } */
+    
+    /* .plus {
+        padding: 10px;
+        position: absolute;
+    } */
+
+    /*---------------------  Media queries - Responsive  -------------------*/
+
+
+
+@media only screen and (max-width: 991px) {
+
+
+
+}
+
+/*----------------- Medium devices -------------------------*/
+
+
+@media only screen and (min-width: 576px ) and (max-width: 991px) {
+
+    .galeria-indice-semiCirculo {
+        width: 30%;
+        height: 6rem;
+    }
+    
+    .galeria-indice-semiCirculo h2 {
+        font-size: 2.5rem;
+    }
+
+    .carousel-products {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .carousel__container {
+        padding: .3rem;
+        display: flex;
+        flex-direction:row;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .carousel__item {
+        width: 45%;
+        height: 39vh;
+    }
+
+}
+
+/*----------------- Small devices -------------------------*/
+
+/* @media only screen and (max-width: 767px) {
+    .galeria-indice-semiCirculo {
+        width: 30%;
+        height: 6rem;
+    }
+    
+    .galeria-indice-semiCirculo h2 {
+        font-size: 2.5rem;
+    }
+    .carousel-products {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .carousel__container {
+        padding: .3rem;
+        display: flex;
+        flex-direction:row;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .carousel__item {
+        width: 45%;
+        height: 39vh;
+    }
+} */
+
+@media only screen and (max-width: 575px) {
+    .galeria-indice{
+      height: 5vh;  
+    }
+    
+    .galeria-indice-semiCirculo {
+        width: 35%;
+        height: 6rem;
+    }
+    
+    .galeria-indice-semiCirculo h2 {
+        font-size: 1.6rem;
+    }
+
+    .carousel-products {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;        
+    }
+
+    .carousel__container {
+        width: 100%;
+        padding: .3rem;
+        display: flex;
+        flex-direction:row;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .carousel__item {
+        width: 100%;
+        height: 20vh;
+    }
+}
