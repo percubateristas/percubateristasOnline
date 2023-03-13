@@ -370,14 +370,13 @@ class Perculoops extends Component {
                             <h2>Perculoops</h2>
                         </div>
 
-                        {<DivInicioSesion />}
+                        
                     </div>
                     <div className='contenedor-reproductor'>
                         <div className='perculoops-reproductor'>
-                            <h4>{this.enReproduccionNombre}</h4>
-                            <div className='perculoops-reproductor-progreso'></div>
-                            <div className='perculoops-reproductor-duracion'></div>
-                            <div className='perculoops-reproductor-controladores'>
+                            <div className="reproductor-superior">
+                               <h4>{this.enReproduccionNombre}</h4>
+                                <div className='perculoops-reproductor-controladores'>
 
                                 <button onClick={this.aDetener} className='btn-stop'>
                                     <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -405,8 +404,17 @@ class Perculoops extends Component {
 
                                 </button>
 
+                                </div> 
                             </div>
+                            
+                            <div className="">
+                                {<DivInicioSesion />}
+                            </div>
+
                         </div>
+
+
+
                         <div class="perculoops-lista_de_temas">
                             <div class="item_1">
                                 <div class="item-play">

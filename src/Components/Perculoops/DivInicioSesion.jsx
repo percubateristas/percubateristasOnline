@@ -29,7 +29,7 @@ const DivInicioSesion = () => {
           <>
             <h5>
               Iniciá sesión para descargar los audios. Si no tenés una cuenta,
-              create una aquí
+              create una:
             </h5>{" "}
             <SignUp />
           </>

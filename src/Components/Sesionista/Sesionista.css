@@ -1,6 +1,8 @@
 .sesiones {
-    background-image:url(./grabamos-fondo-banner.svg);
+    background-image:url(./S5-B-1600x900.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--color-primario-A);
     height: 100vh;
     width: 100%;
@@ -12,6 +14,7 @@
 
 .sesiones-indice {
     width: 80%;
+    max-width: 1200px;
     height: 12vh;
     display: flex;
     flex-direction: column;
@@ -36,7 +39,8 @@
 }
 
 .sesiones-tarjeta {
-    width: 80%;    
+    width: 80%;
+    max-width: 1200px;    
     height: 80vh;
     background-color: var(--color-primario-C);
     border-radius: 20px;

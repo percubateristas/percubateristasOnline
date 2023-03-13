@@ -6,8 +6,9 @@ import {
 import withReactContent from "sweetalert2-react-content";
 import React, { useState, useEffect } from "react";
 import { auth } from "../../firebaseConfig/firebase";
-import "../Navbar/Navbar.css";
+// import "../Navbar/Navbar.css";
 import Swal from "sweetalert2";
+import './Styles.css';
 
 const SignIn = () => {
   
@@ -127,19 +128,19 @@ const SignIn = () => {
             <div class="modal-body">
               <div className="sign-in-container">
                 <form onSubmit={SignIn}>
-                  <h1 id="titulo-1">Ingresar con tu cuenta</h1>
-                  <div id="inputs">
+                  <h1 id="titulo-1">Ingresá con tu cuenta:</h1>
+                  <div className="inputs" id="inputs">
                     <input
                       id="input-email"
                       type="email"
-                      placeholder="email"
+                      placeholder="Email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     ></input>
                     <input
                       id="input-password"
                       type="password"
-                      placeholder="contraseña"
+                      placeholder="Contraseña"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                     ></input>
@@ -151,7 +152,11 @@ const SignIn = () => {
                       <>Email o contraseña incorrectos</>
                     )}
                   </p>
-                  <button id="btn-ingresar" type="submit">
+                  <button 
+                    id="btn-ingresar" 
+                    type="submit" 
+                    className="btn-inicio"
+                  >
                     Ingresar
                   </button>
                 </form>
@@ -160,7 +165,7 @@ const SignIn = () => {
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn-crear"
                 data-bs-dismiss="modal"
               >
                 Cerrar

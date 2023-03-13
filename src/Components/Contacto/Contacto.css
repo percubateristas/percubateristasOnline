@@ -1,6 +1,8 @@
 .contacto {
-    background-image:url(./contacto-fondo-banner.svg);
+    background-image:url(./S6-B-1600x900.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--color-primario-B);
     height: 85vh;
     width: 100%;
@@ -12,6 +14,7 @@
 
 .contacto-indice {
     width: 80%;
+    max-width: 1200px;
     height: 20%;
     display: flex;
     flex-direction: column;
@@ -36,6 +39,7 @@
 
 .contacto-tarjeta {
     width: 80%;
+    max-width: 1200px;
     height: 60%;
     display: flex;
     align-items: center;

@@ -1,7 +1,9 @@
 .nosotrxs {
-    background-image:url(./nosotrxs-fondo-banner-B.svg);
+    background-image:url(./S2-B-1600x900.svg);
     background-repeat: no-repeat ;
     background-color: var(--color-primario-B);
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,6 +13,7 @@
 
 .nosotrxs-indice {
     width: 80%;
+    max-width: 1200px;
     display: flex;
 }
 
@@ -30,6 +33,7 @@
 }
 .nosotrxs-tarjeta {
     width: 80%;
+    max-width: 1200px;
     border-radius: .75rem;
     display: flex;
     text-align:center;
@@ -146,15 +150,11 @@
     .nosotrxs-tarjeta-izq p {
         width: 100%;
         font-size: 1.5rem;
-        text-align:center;
-        
     }
 
     .nosotrxs-tarjeta-der p {
         width: 100%;
         font-size: 1.3rem;
-        text-align:center;
-        
     }
 
 }
@@ -197,15 +197,11 @@
     .nosotrxs-tarjeta-izq p {
         width: 100%;
         font-size: 1.2rem;
-        text-align:center;
-        
     }
 
     .nosotrxs-tarjeta-der p {
         width: 100%;
         font-size: 1rem;
-        text-align:center;
-        
     }
 
 }
@@ -226,21 +222,41 @@
     .nosotrxs-tarjeta-izq p {
         width: 100%;
         font-size: .9rem;
-        text-align:center;
-        
     }
 
     .nosotrxs-tarjeta-der p {
         width: 100%;
         font-size: .7rem;
-        text-align:center;
-        
     }
 
 }
 
 /*----------------- X Small devices -------------------------*/
 
-@media only screen and (max-width: 575px) {
-   
+@media only screen and (max-width: 380px) {
+
+    .nosotrxs-indice {
+        width: 90%;
+        height: 10vh;
+    }
+
+    .nosotrxs-tarjeta {
+        width: 90%;     
+        gap: 0rem;
+        height: 88vh;
+    }
+
+    .nosotrxs-tarjeta-izq, .nosotrxs-tarjeta-der {
+        overflow-y: scroll;
+        scroll-snap-type: y;
+    }
+    .nosotrxs-tarjeta-izq p{
+        font-size: .7rem;  
+    } 
+    
+    .nosotrxs-tarjeta-der p {
+        font-size: .6rem;
+        justify-self: center;
+    }
+
 }

@@ -1,6 +1,8 @@
 .galeria {
-    background-image:url(./galeria-fondo-banner.svg);
+    background-image:url(./S3-B-1600x900.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--color-primario-C);
     height: 100vh;
     width: 100%;
@@ -12,13 +14,14 @@
 
 .galeria-indice {
     width: 80%;
+    height: 12vh;
     display: flex;
     flex-direction: column;
 }
 
 .galeria-indice-semiCirculo {
     width: 20%;
-    height: 6rem;
+    height: 8rem;
     background-color: var(--color-neutro-darkness);
     clip-path: circle(50% at 50% 0);
     text-align: center;
@@ -28,7 +31,7 @@
 }
 
 .galeria-indice-semiCirculo h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
 }
 
 /* clases para el carrusell*/
@@ -179,9 +182,16 @@
 
 
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1100px) {
 
-
+    .galeria-indice-semiCirculo {
+        width: 20%;
+        height: 6rem;
+    }
+    
+    .galeria-indice-semiCirculo h2 {
+        font-size: 2.2rem;
+    }
 
 }
 
@@ -256,8 +266,11 @@
 } */
 
 @media only screen and (max-width: 575px) {
+    .galeria{
+        height: 150vh;
+    }
     .galeria-indice{
-      height: 5vh;  
+      height: 8vh;  
     }
     
     .galeria-indice-semiCirculo {
@@ -271,7 +284,7 @@
 
     .carousel-products {
         width: 100%;
-        height: 90vh;
+        height: 135vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -290,6 +303,23 @@
 
     .carousel__item {
         width: 100%;
-        height: 20vh;
+        height: 30vh;
     }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .galeria-indice{
+        height: 10vh;  
+      }
+      
+      .galeria-indice-semiCirculo {
+          width: 40%;
+          height: 6rem;
+      }
+      
+      .galeria-indice-semiCirculo h2 {
+          font-size: 1.5rem;
+      }
+
 }

@@ -32,7 +32,7 @@ const Galeria = () => {
                                 </div>
 
                                 <div id='item-producto' className='carousel__item'>
-                                <iframe className='carousel__item__img' src='https://www.instagram.com/p/CdgvyHUJh87/embed' frameborder="0" allowtransparency="true"></iframe>
+                                <iframe className='carousel__item__img' src='https://www.instagram.com/p/CdWorplJRBN/embed' frameborder="0" allowtransparency="true"></iframe>
                                 </div>
 
 {/* ---------------------------------------   Estructura para galería de imágenes  ----------------------------     */}

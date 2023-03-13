@@ -1,0 +1,119 @@
+.btn-inicio {
+    width: 120px;
+    color: var(--color-neutro-lightness);
+    border-radius: 2rem;
+    background-color: #e98c35;
+    border: none;
+    padding: .1rem .4rem;
+    font-size: 22px;
+    font-family: var(--tipografia-principal);
+}
+
+.btn-inicio:hover {
+    transform: scale(1.1);
+    transition: .4seg all linear;
+    color: var(--color-neutro-inter);
+}
+
+.btn-crear {
+    width: 120px;
+    font-family: var(--tipografia-principal);
+    color: var(--color-neutro-lightness);
+    border-radius: 2rem;
+    background-color: var(--color-primario-A);
+    border: none;
+    padding: .1rem .4rem;
+    font-size: 22px;
+}
+
+.btn-crear:hover {
+    transform: scale(1.1);
+    transition: .4seg all linear;
+    color: var(--color-neutro-darkness);
+}
+
+
+/*-------------------   Estilos de Modales   --------------------*/
+
+
+#titulo, #titulo-1, #mensaje {
+    font-family: var(--tipografia-principal);
+    font-size: 2rem;
+}
+
+#mensaje {
+    font-family: var(--tipografia-principal);
+    font-size: 1.3rem;
+    align-self: center;
+}
+
+.modal-header {
+    background-color: var(--color-primario-C);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+
+}
+.modal-body {
+    background-color: var(--color-secundario-0);
+}
+.modal-body .sign-in-container form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secundario-0);
+}
+
+#titulo-1 {
+    padding-left: 10px;
+}
+
+.inputs input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    /* border: 2px solid var(--color-neutro-inter); */
+    background-color: var(--color-secundario-0);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.25);
+    border: none;
+    padding-left: 10px;
+}
+
+#input-email, #input-password {
+    font-family: var(--tipografia-principal);
+    font-size: 1.5rem;
+}
+
+.modal-footer {
+    background-color: var(--color-secundario-0);
+}
+
+#mensaje {
+    color: var(--color-neutro-inter);
+}
+
+.btn-close {
+    width: 30px;
+}
+
+#btn-ingresar {
+    align-self: center;
+}
+
+/*-------------------   Medias queries - Responsive   --------------------*/
+
+
+
+@media only screen and (max-width: 400px) {
+    
+    .btn-inicio, .btn-crear{
+        width: 65px;
+        border-radius: 2rem;
+        padding: .1rem .4rem;
+        font-size: 14px;
+        
+    }
+
+}

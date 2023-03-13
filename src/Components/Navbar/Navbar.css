@@ -3,10 +3,12 @@
     height: 9vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .navbar-contenedor {
     width: 80%;
+    max-width: 1200px;
     font-family: var(--tipografia-principal);
     display: flex;
     justify-content: space-between;
@@ -15,7 +17,7 @@
 
 .navbar-renglon-redes {
     width: 100%;
-    height: 7vh;
+    height: 10vh;
     background-color: var(--color-neutro-darkness);
     font-family: var(--tipografia-principal);
     display: flex;
@@ -25,6 +27,7 @@
 
 .navbar-contenedor-renglon {
     width: 80%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,35 +92,6 @@
     justify-content: flex-end;
     align-items: center;
 }
-.btn-inicio {
-    width: 40%;
-    color: var(--color-neutro-lightness);
-    border-radius: 2rem;
-    background-color: #b95c40;
-    border: none;
-    padding: .1rem .4rem;
-    font-size: 1rem;
-}
-
-.btn-inicio:hover {
-    transform: scale(1.1);
-    transition: .4seg all linear;
-}
-
-.btn-crear {
-    width: 40%;
-    color: var(--color-neutro-lightness);
-    border-radius: 2rem;
-    background-color: var(--color-primario-A);
-    border: none;
-    padding: .1rem .4rem;
-    font-size: 1rem;
-}
-
-.btn-crear:hover {
-    transform: scale(1.1);
-    transition: .4seg all linear;
-}
 
 .btn-hamburguesa-icono {
     /* visibility: none; */
@@ -132,15 +106,13 @@
 
 @media only screen and (max-width: 991px) {
 
+    .nav-logo-texto{
+        font-size: 2.1rem;
+        margin: 0 auto;
+    }
 
     .nav-logueo {
         width: 35%;
-    }
-
-   
-    .btn-inicio, .btn-crear{
-        width: 60%;
-        font-size: 1.3rem;
     }
 
     .nav-logo-texto{
@@ -179,7 +151,7 @@
         display: flex;
         flex-direction: column;
         transform:translateX(100%);
-        transition: 0.3s ease all;
+        transition: 0.5s ease all;
         z-index: 10;
         padding: 0;
         
@@ -204,10 +176,15 @@
     
 }
 
-
-
 @media only screen and (min-width: 767px ) and (max-width: 991px) {
-    
+
+    .navbar-renglon-redes {
+        height: 7vh;
+    }
+    .nav-logo-texto{
+        font-size: 2.1rem;
+        margin: 0 auto;
+    }
 }
 
 /*----------------- Small devices -------------------------*/
@@ -219,6 +196,11 @@
         width: 45%;
     }
 
+    .nav-logo-texto{
+        font-size: 2.1rem;
+        margin: 0 auto;
+    }
+
 }
 
 /*----------------- X Small devices -------------------------*/
@@ -227,13 +209,34 @@
 @media only screen and (max-width: 575px) {
     
     .nav-logueo {
-        width: 50%;
-        
+        width: 70%;
     }
 
-    .btn-inicio, .btn-crear {
-        /* width: 55%; */
-        font-size: 1rem;
+}
+
+@media only screen and (max-width: 380px) {
+
+    .navbar{
+        height: 9vh;
+
+    }
+
+    .navbar-renglon-redes {
+        height: 10vh;
+    }
+
+    .navbar-contenedor-renglon {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .navbar-contenedor {
+        width: 90%;
+        height: 7vh;
+    }
+    
+    .nav-logueo {
+        width: 70%;        
     }
 
 }

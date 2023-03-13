@@ -1,7 +1,9 @@
 .hero {
-    background-image:url(./hero-fondo-banner.svg);
+    background-image:url(./S1-B-1600x900.svg);
     background-repeat:no-repeat;
     background-color: var(--color-primario-A);
+    background-position: center;
+    background-size: cover;
     height: 84vh;
     display: flex;
     justify-items: center;
@@ -9,6 +11,7 @@
 }
 
 .container-hero {
+    max-width: 1200px;
     width: 80%;
     height: 50vh;
     display: flex;
@@ -261,3 +264,25 @@
     }
 
 }
+
+@media only screen and (max-width: 360px) {
+
+    .container-hero {
+        width: 90%;
+    }
+
+    .hero-texto {
+        width: 100%;
+        height: 40%;
+        font-size: 1.2rem;
+        padding: 0rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .hero-imagen {
+        width: 7rem;
+    }
+
+
+}
+

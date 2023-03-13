@@ -5,6 +5,7 @@ import {
 import React, { useState, useEffect } from "react";
 import { auth } from "../../firebaseConfig/firebase";
 import Swal from "sweetalert2";
+import './Styles.css';
 
 const SignUp = () => {
   const [authUser, setAuthUser] = useState(null);
@@ -76,7 +77,7 @@ const SignUp = () => {
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
+              <h5 class="modal-title" id="titulo">
                 Crear usuarix
               </h5>
               <button
@@ -89,26 +90,24 @@ const SignUp = () => {
             <div class="modal-body">
               <div className="sign-in-container">
                 <form onSubmit={SignUp}>
-                  <h1>Creá una cuenta</h1>
-                  <input
+                  <h1 id="titulo-1">Creá una cuenta</h1>
+                  <div className="inputs">
+                    <input
+                    id="input-email"
                     type="email"
-                    placeholder="email"
+                    placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   ></input>
                   <input
+                    id="input-password"
                     type="password"
-                    placeholder="contraseña"
+                    placeholder="Contraseña"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   ></input>
-                  <button
-                    onClick={authUser ? error : exitoso}
-                    type="submit"
-                  >
-                    Crear
-                  </button>
-                  <p>
+                  </div>
+                  <p id="mensaje">
                     {authUser ? (
                       <>
                         <p>Cuenta creada con éxito</p>
@@ -119,13 +118,21 @@ const SignUp = () => {
                       </>
                     )}
                   </p>
+                  <button
+                    id="btn-ingresar"
+                    className="btn-crear"
+                    onClick={authUser ? error : exitoso}
+                    type="submit"
+                  >
+                    Crear
+                  </button>
                 </form>
               </div>
             </div>
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn-inicio"
                 data-bs-dismiss="modal"
               >
                 Cerrar
