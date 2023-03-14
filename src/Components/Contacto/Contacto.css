@@ -342,3 +342,39 @@
     }
 
 }
+
+
+@media only screen and (max-width: 360px) {
+
+    .contacto {
+        height: 120vh;
+    }
+
+    .contacto-indice-semiCirculo {
+        width: 53%;
+        height: 6rem;   
+        margin-bottom: 0rem;     
+    }
+    
+    .contacto-indice-semiCirculo h2 {
+        font-size: 2rem;
+        margin-top: .3rem;
+    }
+
+    .contacto-tarjeta {
+        width: 95%;
+        height: 100vh;
+    }
+    .contacto-tarjeta_A {
+        height: 64vh;
+    }
+    .contacto-tarjeta_B {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    .tarjeta_B-texto h4 {
+        font-size: 1.4rem;
+        
+    }
+}

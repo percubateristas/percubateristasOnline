@@ -59,6 +59,15 @@
 
 @media only screen and (max-width: 575px) {
     .footer-logos {
-        padding-top: 1.75rem;
+        height: 12vh;
+        padding-top: .75rem;
+    }
+
+    .footer-logo h3 {
+        font-size: 2rem;
+    }
+
+    .footer-autoria h3 {
+        font-size: 1rem;
     }
 }

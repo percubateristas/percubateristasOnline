@@ -486,3 +486,57 @@
     }
 
 }
+
+@media only screen and (max-width: 380px) {
+
+    .sesiones {
+        height: 136vh;
+    }
+       
+    .sesiones-indice-semiCirculo h2 {
+        font-size: 1.3rem;
+        margin-top: .4rem;
+    }
+
+    .sesiones-tarjeta {
+        height: 120vh;
+        margin-bottom: 1rem;
+    }
+
+    .sesiones-tarjeta-titulo {
+        margin-bottom: 2rem;
+    }
+
+    .sesiones-planes_izq, .sesiones-planes_der {
+        width: 95%;
+        height: 30vh;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .sesiones {
+        height: 143vh;
+    }
+       
+    .sesiones-indice-semiCirculo h2 {
+        font-size: 1.3rem;
+        margin-top: .4rem;
+    }
+
+    .sesiones-tarjeta {
+        height: 128vh;
+        margin-bottom: 1rem;
+    }
+
+    .sesiones-tarjeta-titulo {
+        margin-bottom: 2rem;
+    }
+
+    .sesiones-planes_izq, .sesiones-planes_der {
+        width: 100%;
+        height: 35vh;
+    }
+
+}
